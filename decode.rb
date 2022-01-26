@@ -35,3 +35,9 @@ def decodeWord(str)
     word = morse.map { |c| decodeChar(c) }
     word.join
 end
+
+def decodeSentence(str)
+    morse = str.split('  ')
+    sentence = morse.map { |w| decodeWord(w) }
+    sentence.join(' ')
+end
