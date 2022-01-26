@@ -27,4 +27,5 @@ def decodeChar(str)
         '-.--' => 'Y',
         '--..' => 'Z',
     }
+    @morseChar[str]
 end
