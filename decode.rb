@@ -41,3 +41,7 @@ def decodeSentence(str)
     sentence = morse.map { |w| decodeWord(w) }
     sentence.join(' ')
 end
+decodeWord(".-") 
+decodeWord("-- -.--")
+decodeWord("-- -.--   -. .- -- .")
+decodeWord(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
