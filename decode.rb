@@ -43,5 +43,5 @@ def decodeSentence(str)
 end
 decodeWord(".-") 
 decodeWord("-- -.--")
-decodeWord("-- -.--   -. .- -- .")
-decodeWord(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
+decodeSentence("-- -.--   -. .- -- .")
+decodeSentence(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
