@@ -27,3 +27,4 @@ def decodeChar(str)
         '-.--' => 'Y',
         '--..' => 'Z',
     }
+end
