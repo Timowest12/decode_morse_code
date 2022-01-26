@@ -29,3 +29,9 @@ def decodeChar(str)
     }
     @morseChar[str]
 end
+
+def decodeWord(str)
+    morse = str.split
+    word = morse.map { |c| decodeChar(c) }
+    word.join
+end
