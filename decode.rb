@@ -1,5 +1,5 @@
-def decodeChar(str)
-  @morse_Char = {
+def decode_char(str)
+  @morse_char = {
     '.-' => 'A',
     '-...' => 'B',
     '-.-.' => 'C',
@@ -27,21 +27,21 @@ def decodeChar(str)
     '-.--' => 'Y',
     '--..' => 'Z'
   }
-  @morse_Char[str]
+  @morse_char[str]
 end
 
-def decodeWord(str)
+def decode_word(str)
   morse = str.split
-  word = morse.map { |c| decodeChar(c) }
+  word = morse.map { |c| decode_char(c) }
   word.join
 end
 
-def decodeSentence(str)
+def decode_sentence(str)
   morse = str.split('  ')
-  sentence = morse.map { |w| decodeWord(w) }
+  sentence = morse.map { |w| decode_word(w) }
   sentence.join(' ')
 end
-decodeWord('.-')
-decodeWord('-- -.--')
-decodeSentence('-- -.--   -. .- -- .')
-decodeSentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
+decode_word('.-')
+decode_word('-- -.--')
+decode_sentence('-- -.--   -. .- -- .')
+decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
