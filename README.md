@@ -10,6 +10,22 @@ In this project, we build a movie morse decoder app, using Ruby
 - VScode
 - Rubocop
 
+decode_char(".-")
+
+<img width="285" alt="single" src="https://user-images.githubusercontent.com/13661892/151235900-aed746e3-0902-4cfe-bad5-63a4c28779ae.png">
+
+
+decode("-- -.--   -. .- -- .")
+
+<img width="258" alt="word" src="https://user-images.githubusercontent.com/13661892/151235932-f0e610ac-e4f7-4de4-918f-3c8543cc2d7e.png">
+
+
+decode( .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...)
+
+<img width="282" alt="sentence" src="https://user-images.githubusercontent.com/13661892/151235954-41600037-bfde-4282-ad53-1d7e5e6cb21f.png">
+
+
+
 
 ## Getting Started
 
